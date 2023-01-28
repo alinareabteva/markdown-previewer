@@ -1,0 +1,125 @@
+ .container {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+ }
+
+ #title {
+   color: #eee;
+   font-family: 'Rubik', sans-serif;
+   text-align: center;
+   font-size: 4em;
+   text-shadow: 5px 5px #333;
+ }
+
+ #editor,
+ #preview {
+   width: 40%;
+   height: 80vh;
+   padding: 24px 14px 14px 14px;
+   border: none;
+   margin: 0 15px;
+ }
+
+ #editor {
+   background: #eee;
+ }
+
+ #preview {
+   background: #333;
+   color: white;
+   font-family: 'Molengo', sans-serif;
+   font-size: 1.2em;
+ }
+
+ a {
+   color: #D6EFA3;
+   padding: 3px;
+   font-size: 1.2em;
+ }
+
+ ul {
+   display: block;
+   list-style-type: disc;
+ }
+
+ ul ul {
+   list-style-type: circle;
+ }
+
+ ul ul ul {
+   list-style-type: square;
+ }
+
+ li {
+   margin-left: 1em;
+ }
+
+ code {
+   background: #415a77;
+   padding: 3px;
+   font-weight: bold;
+ }
+
+ pre {
+   display: block;
+   overflow: auto;
+   background: #415a77;
+   padding: 5px;
+   line-height: 1.2;
+ }
+
+ strong {
+   font-weight: bold;
+ }
+
+ em {
+   font-style: italic;
+ }
+
+ blockquote {
+   margin-left: 2em;
+   padding-left: 0.6em;
+   border-left: 0.4em solid grey;
+ }
+
+ #preview img {
+   display: block;
+   max-width: 70%;
+   margin: 2rem auto;
+ }
+
+ table {
+   border-collapse: collapse;
+   width: 60%;
+ }
+
+ #preview td,
+ #preview th {
+   border: 3px solid #00b4d8;
+   padding-left: 5px;
+   padding-right: 5px;
+ }
+
+ ::selection {
+   background: #adb5bd;
+ }
+
+ @media screen and (max-width: 700px) {
+   .container {
+     flex-direction: column;
+   }
+
+   #editor,
+   #preview {
+     width: 90%;
+     height: initial;
+   }
+
+   #editor {
+    min-height: 600px;
+    margin-bottom: 20px;
+   }
+ }
